@@ -1,0 +1,23 @@
+create table "ROOT".EMERGENCY_CONTACT
+(
+	FNAME VARCHAR(20) not null,
+	MNAME VARCHAR(20),
+	LNAME VARCHAR(20) not null,
+	ADDRESS VARCHAR(30) not null,
+	PHONE_NO VARCHAR(12) not null primary key,
+	PATIENT_ID VARCHAR(20) not null,
+	EMAIL VARCHAR(50),
+	RELATIONSHIP VARCHAR(25)
+)
+
+            String Query = "SELECT * FROM EMERGENCY_CONTACT";
+
+            String Query="SELECT PATIENT_ID FROM PATIENT";
+
+            String Query = "INSERT INTO EMERGENCY_CONTACT (ADDRESS, PATIENT_ID, PHONE_NO, FNAME, MNAME, LNAME, RELATIONSHIP, EMAIL) VALUES ('"+AddressText.getText()+"' ,'"+jComboBox1.getSelectedItem()+"' , '"+PhonePatientText.getText()+"' , '"+FnameText.getText()+"' , '"+MNameText.getText()+"' , '"+LNameText.getText()+"' , '"+RelationshipText.getSelectedItem()+"' , '"+EmailText.getText()+"')";
+
+            String Query = "SELECT * FROM EMERGENCY_CONTACT WHERE PHONE_NO = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "DELETE FROM EMERGENCY_CONTACT WHERE PHONE_NO ='"+PatientList.getSelectedValue()+"'";
+
+            String Query = "UPDATE EMERGENCY_CONTACT SET ADDRESS= '"+AddressText.getText()+"' , RELATIONSHIP= '"+RelationshipText.getSelectedItem()+"' , PATIENT_ID= '"+jComboBox1.getSelectedItem()+"' , PHONE_NO= '"+PhonePatientText.getText()+"' , FNAME= '"+FnameText.getText()+"' , MNAME= '"+MNameText.getText()+"' , LNAME= '"+LNameText.getText()+"' , EMAIL= '"+EmailText.getText()+"' WHERE PHONE_NO = '"+PatientList.getSelectedValue()+"'";

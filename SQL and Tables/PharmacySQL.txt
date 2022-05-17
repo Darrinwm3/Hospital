@@ -1,0 +1,16 @@
+create table "ROOT".PHARMACY
+(
+	LOCATION VARCHAR(30) not null primary key,
+	COMPANY VARCHAR(30)
+)
+
+        String Query = "SELECT * FROM PHARMACY";
+
+
+        String Query = "INSERT INTO PHARMACY (LOCATION, COMPANY) VALUES ('"+PharmacyLocationText.getText()+"' , '"+CompanyText.getText()+"')";
+
+        String Query = "UPDATE PHARMACY SET LOCATION = '"+PharmacyLocationText.getText()+"', COMPANY = '"+CompanyText.getText()+"' WHERE LOCATION = '"+List1.getSelectedValue()+"'";
+
+        String Query = "DELETE FROM PHARMACY WHERE LOCATION = '"+List1.getSelectedValue()+"'";
+
+        String Query = "SELECT * FROM PHARMACY WHERE LOCATION = '"+List1.getSelectedValue()+"'";

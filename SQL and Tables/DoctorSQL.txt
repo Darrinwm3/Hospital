@@ -1,0 +1,21 @@
+create table "ROOT".DOCTOR
+(
+	DOCTOR_ID VARCHAR(20) not null primary key,
+	F_NAME VARCHAR(20),
+	L_NAME VARCHAR(20),
+	DEGREE VARCHAR(20)
+)
+
+        String Query = "SELECT * FROM DOCTOR";
+
+            String Query="SELECT EMPLOYEE_ID FROM EMPLOYEE";
+
+        String Query = "INSERT INTO DOCTOR (DOCTOR_ID, F_NAME, L_NAME, DEGREE) VALUES ('"+jComboBox1.getSelectedItem()+"' , '"+FirstNameText.getText()+"' , '"+LastNameText.getText()+"' , '"+DegreeText.getText()+"')";
+
+        String Query = "INSERT INTO DOCTOR (DOCTOR_ID, F_NAME, L_NAME, DEGREE) VALUES ('"+jComboBox1.getSelectedItem()+"' , '"+FirstNameText.getText()+"' , '"+LastNameText.getText()+"' , '"+DegreeText.getText()+"')";
+
+        String Query = "UPDATE DOCTOR SET DOCTOR_ID = '"+jComboBox1.getSelectedItem()+"', F_NAME = '"+FirstNameText.getText()+"', L_NAME = '"+LastNameText.getText()+"', DEGREE = '"+DegreeText.getText()+"' WHERE DOCTOR_ID = '"+List1.getSelectedValue()+"'";
+
+        String Query = "DELETE FROM DOCTOR WHERE DOCTOR_ID = '"+List1.getSelectedValue()+"'";
+
+        String Query = "SELECT * FROM DOCTOR WHERE DOCTOR_ID = '"+List1.getSelectedValue()+"'";

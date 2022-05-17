@@ -1,0 +1,22 @@
+create table "ROOT".TREATMENTS
+(
+	ID_NUMBER VARCHAR(20) not null primary key,
+	TREATMENT_NAME VARCHAR(20) not null,
+	PLAN VARCHAR(30) not null,
+	TREATMENT_TYPE VARCHAR(30) not null,
+	PATIENT_ID VARCHAR(20) not null,
+	START_DATE VARCHAR(20),
+	END_DATE VARCHAR(20)
+)
+
+            String Query = "SELECT * FROM TREATMENTS";
+
+            String Query="SELECT PATIENT_ID FROM PATIENT";
+
+            String Query = "SELECT * FROM TREATMENTS WHERE ID_NUMBER = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "INSERT INTO TREATMENTS (ID_NUMBER, TREATMENT_NAME, START_DATE, END_DATE, PLAN, TREATMENT_TYPE, PATIENT_ID) VALUES ('"+IDText.getText()+"' , '"+TreatText.getText()+"' , '"+StartDateText.getText()+"' , '"+EndDateText.getText()+"' , '"+PlanText.getText()+"' , '"+TreatmentText.getText()+"' , '"+jComboBox1.getSelectedItem()+"')";
+
+            String Query = "UPDATE TREATMENTS SET ID_NUMBER= '"+IDText.getText()+"' , TREATMENT_NAME= '"+TreatText.getText()+"' , START_DATE= '"+StartDateText.getText()+"' , PATIENT_ID= '"+jComboBox1.getSelectedItem()+"' , END_DATE= '"+EndDateText.getText()+"' , PLAN= '"+PlanText.getText()+"' , TREATMENT_TYPE= '"+TreatmentText.getText()+"' WHERE ID_NUMBER = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "DELETE FROM TREATMENTS WHERE ID_NUMBER ='"+PatientList.getSelectedValue()+"'";

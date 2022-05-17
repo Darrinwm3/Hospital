@@ -1,0 +1,22 @@
+create table "ROOT".EMPLOYEE
+(
+	F_NAME CHAR(20),
+	L_NAME CHAR(20),
+	EMPLOYEE_ID VARCHAR(20) not null primary key,
+	SEX CHAR(1),
+	HIRE_DATE VARCHAR(20),
+	JOB_TITLE VARCHAR(20),
+	DATE_OF_BIRTH VARCHAR(20),
+	DEPARTMENT VARCHAR(20),
+	SSN VARCHAR(9)
+)
+
+        String Query = "SELECT * FROM EMPLOYEE";
+
+        String Query = "INSERT INTO EMPLOYEE (F_NAME, L_NAME, EMPLOYEE_ID, SEX, HIRE_DATE, JOB_TITLE, DATE_OF_BIRTH, DEPARTMENT, SSN) VALUES ('"+FnameText.getText()+"' , '"+LnameText.getText()+"' , '"+EmployeeIdText.getText()+"' , '"+SexText.getText()+"' , '"+HireDateText.getText()+"' , '"+JobTitleText.getText()+"' , '"+DateOfBirthText.getText()+"' , '"+DepartmentText.getText()+"' , '"+SsnText.getText()+"')";
+
+        String Query = "SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = '"+EmployeeList.getSelectedValue()+"'";
+
+        String Query = "UPDATE EMPLOYEE SET F_NAME = '"+FnameText.getText()+"', L_NAME = '"+LnameText.getText()+"', EMPLOYEE_ID = '"+EmployeeIdText.getText()+"', SEX = '"+SexText.getText()+"', HIRE_DATE = '"+HireDateText.getText()+"', JOB_TITLE = '"+JobTitleText.getText()+"', DATE_OF_BIRTH = '"+DateOfBirthText.getText()+"', DEPARTMENT = '"+DepartmentText.getText()+"', SSN = '"+SsnText.getText()+"' WHERE EMPLOYEE_ID = '"+EmployeeList.getSelectedValue()+"'";
+
+        String Query = "DELETE FROM EMPLOYEE WHERE EMPLOYEE_ID = '"+EmployeeList.getSelectedValue()+"'";

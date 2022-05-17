@@ -1,0 +1,20 @@
+create table "ROOT".ROOM
+(
+	ROOM_NUMBER VARCHAR(5) not null primary key,
+	ROOM_WING CHAR(1) not null,
+	ROOM_FLOOR VARCHAR(2) not null,
+	PURPOSE VARCHAR(25) not null,
+	PATIENTS_ID VARCHAR(20) not null
+)
+
+            String Query = "SELECT * FROM ROOM";
+
+            String Query="SELECT PATIENT_ID FROM PATIENT";
+
+            String Query = "INSERT INTO ROOM (ROOM_NUMBER, ROOM_WING, ROOM_FLOOR, PURPOSE, PATIENTS_ID) VALUES ('"+RoomNumText.getText()+"' , '"+RoomWingText.getText()+"' , '"+RoomFloorText.getText()+"' , '"+PurposeText.getText()+"' , '"+jComboBox1.getSelectedItem()+"')";
+
+            String Query = "SELECT * FROM ROOM WHERE ROOM_NUMBER = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "UPDATE ROOM SET ROOM_NUMBER= '"+RoomNumText.getText()+"' , ROOM_WING= '"+RoomWingText.getText()+"' , ROOM_FLOOR= '"+RoomFloorText.getText()+"' , PATIENTS_ID= '"+jComboBox1.getSelectedItem()+"' , PURPOSE= '"+PurposeText.getText()+"' WHERE ROOM_NUMBER = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "DELETE FROM ROOM WHERE ROOM_NUMBER ='"+PatientList.getSelectedValue()+"'";

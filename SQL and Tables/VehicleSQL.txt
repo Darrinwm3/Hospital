@@ -1,0 +1,17 @@
+create table "ROOT".VEHICLE
+(
+	VEHICLE_TAG VARCHAR(8) not null primary key,
+	DRIVER_NAME CHAR(20),
+	DATE_OF_ARRIVAL VARCHAR(20),
+	TIME_OF_ARRIVAL VARCHAR(7)
+)
+
+        String Query = "SELECT * FROM VEHICLE";
+
+        String Query = "INSERT INTO VEHICLE (VEHICLE_TAG, DRIVER_NAME, DATE_OF_ARRIVAL, TIME_OF_ARRIVAL) VALUES ('"+VehicleTagText.getText()+"' , '"+DriverNameText.getText()+"' , '"+DateOfArrivalText.getText()+"' , '"+TimeOfArrivalText.getText()+"')";
+
+        String Query = "UPDATE VEHICLE SET VEHICLE_TAG = '"+VehicleTagText.getText()+"', DRIVER_NAME = '"+DriverNameText.getText()+"', DATE_OF_ARRIVAL = '"+DateOfArrivalText.getText()+"', TIME_OF_ARRIVAL = '"+TimeOfArrivalText.getText()+"' WHERE VEHICLE_TAG = '"+List1.getSelectedValue()+"'";
+
+        String Query = "DELETE FROM VEHICLE WHERE VEHICLE_TAG = '"+List1.getSelectedValue()+"'";
+
+        String Query = "SELECT * FROM VEHICLE WHERE VEHICLE_TAG = '"+List1.getSelectedValue()+"'";

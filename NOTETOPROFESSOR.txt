@@ -1,0 +1,7 @@
+-  Source code is in the .Java files, can be opened with notepad.
+
+-  We did relations through a method called "selvalues" that can be found in many files in our source code.
+
+-  In the SQL text documents, any time you see another table being referenced that means it is how we did our relations. These go in the setvalues method in our source code. An example of this is with Doctor_id in the patient table. We fill a drop-down menu with doctor-id's from the hospital to select from with "SELECT DOCTOR_ID FROM DOCTOR" in the setvalues method.
+
+-  .grab files are what can be plugged into netbeans to implement our tables, and the .txt documents include the create statements those .grab files contain, as well as any SQL statements that occur for that table.

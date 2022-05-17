@@ -1,0 +1,17 @@
+create table "ROOT".EQUIPMENT
+(
+	EQUIPMENT_TYPE VARCHAR(30) not null,
+	ROOM_NUM VARCHAR(5) not null,
+	SERIAL_NUM VARCHAR(15) not null primary key,
+	USED_BY_ID VARCHAR(20) not null
+)
+
+            String Query = "SELECT * FROM EQUIPMENT";
+
+            String Query = "INSERT INTO EQUIPMENT (EQUIPMENT_TYPE, ROOM_NUM, SERIAL_NUM, USED_BY_ID) VALUES ('"+EquipmentType.getText()+"' , '"+RoomNumberText.getText()+"' , '"+SerialNumberText.getText()+"' , '"+UsedByText.getText()+"')";
+
+            String Query = "SELECT * FROM EQUIPMENT WHERE SERIAL_NUM = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "UPDATE EQUIPMENT SET EQUIPMENT_TYPE= '"+EquipmentType.getText()+"' , ROOM_NUM= '"+RoomNumberText.getText()+"' , SERIAL_NUM= '"+SerialNumberText.getText()+"' , USED_BY_ID= '"+UsedByText.getText()+"' WHERE SERIAL_NUM = '"+PatientList.getSelectedValue()+"'";
+
+            String Query = "DELETE FROM EQUIPMENT WHERE SERIAL_NUM ='"+PatientList.getSelectedValue()+"'";

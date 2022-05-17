@@ -1,0 +1,19 @@
+create table "ROOT".PAST_MEDICAL_HISTORY
+(
+	PAST_SURGERY VARCHAR(30),
+	LAB_RESULTS VARCHAR(30),
+	PAST_ILLNESS VARCHAR(30),
+	PATIENT_ID VARCHAR(20)
+)
+
+        String Query = "SELECT * FROM PAST_MEDICAL_HISTORY";
+
+            String Query="SELECT PATIENT_ID FROM PATIENT";
+
+        String Query = "INSERT INTO PAST_MEDICAL_HISTORY (PAST_SURGERY, PATIENT_ID, LAB_RESULTS, PAST_ILLNESS) VALUES ('"+PastSurgeryText.getText()+"' , '"+jComboBox1.getSelectedItem()+"' , '"+LabResultsText.getText()+"' , '"+PastIllnessesText.getText()+"')";
+
+            String Query = "UPDATE PAST_MEDICAL_HISTORY SET PAST_SURGERY = '"+PastSurgeryText.getText()+"', PATIENT_ID = '"+jComboBox1.getSelectedItem()+"', LAB_RESULTS = '"+LabResultsText.getText()+"', PAST_ILLNESS = '"+PastIllnessesText.getText()+"' WHERE PATIENT_ID = '"+List1.getSelectedValue()+"'";
+
+        String Query = "DELETE FROM PAST_MEDICAL_HISTORY WHERE PATIENT_ID = '"+List1.getSelectedValue()+"'";
+
+        String Query = "SELECT * FROM PAST_MEDICAL_HISTORY WHERE PATIENT_ID = '"+List1.getSelectedValue()+"'";

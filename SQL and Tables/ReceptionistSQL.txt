@@ -1,0 +1,14 @@
+create table "ROOT".RECEPTIONIST
+(
+	RECEPTIONIST_ID VARCHAR(20) not null primary key
+)        
+
+        String Query = "SELECT * FROM RECEPTIONIST";
+
+            String Query="SELECT EMPLOYEE_ID FROM EMPLOYEE";
+
+        String Query = "INSERT INTO RECEPTIONIST (RECEPTIONIST_ID) VALUES ('"+jComboBox1.getSelectedItem()+"')";
+
+        String Query = "DELETE FROM RECEPTIONIST WHERE RECEPTIONIST_ID = '"+List1.getSelectedValue()+"'";
+
+        String Query = "SELECT * FROM RECEPTIONIST WHERE RECEPTIONIST_ID = '"+List1.getSelectedValue()+"'";
